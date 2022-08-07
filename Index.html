@@ -9,12 +9,70 @@
     </head>
     <body>
         <main>
-            <div class="titulo">Formulário de Cadastro - Exercício</div>
             <form method="post" action="xD.PHP" enctype="multipart/form-data">
             <input type="hidden" name="Country" value="BR">
+
             <fieldset class="form_container">
                 <legend>Área de Cadastro</legend>
-
+                    <div class="nome">
+                        <label>
+                            <strong>Nome Completo:</strong> <br/>
+                            <input type="text" name="name" required minlength="2" placeholder="Nome Completo" autofocus/>
+                        </label>
+                    </div>
+                <br/>
+                    <div class="idade">
+                        <label>
+                            <strong>Idade:</strong> <br/>
+                            <input type="number" name="age" required min="18" placeholder="Idade"/>
+                        </label>
+                    </div>
+                <br/>
+                    <div class="email">
+                        <label>
+                            <strong>E-mail:</strong> <br/>
+                            <input type="text" name="email" required="" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="endereço de e-mail" placeholder="E-mail"/>
+                        </label>
+                    </div>
+                <br/>
+                    <div class="foto">
+                        <label>
+                            <strong>Foto:</strong> <br/>
+                            <input class="none" type="file" accept=".jpg, .png" name="photo"/>
+                        </label>
+                    </div>
+                <br/>
+                    <div class="descr">
+                        <label>
+                            <strong>Descrição:</strong> <br/>
+                            <textarea name="description" required maxlength="1000"></textarea>
+                        </label>
+                    </div>
+                <br/>
+                    <div class="sexo">
+                        <label>
+                            <strong>Gênero:</strong> <br/>
+                            <select name="sex-orientation" required>
+                                <option value="value1">Masculino</option>
+                                <option value="value2">Feminino</option>
+                                <option value="value3">Outro</option>
+                            </select>
+                        </label>
+                    </div>
+                <br/>
+                    <div class="termos">
+                        <label>
+                            <input class="checkbox" type="checkbox" name="terms" required/>
+                                <strong>Declaro que li e aceito os <a href="https://tributo-neymar.netlify.app/" target="_blank" title="Termos de uso">termos de serviço</a></strong>     
+                        </label>
+                    </div>
+                <br/>
+                <hr/>
+                    <div class="botao">
+                        <label>
+                            <button type="button">Fazer cadastro</button>
+                        </label>
+                    </div>
             </fieldset>
         </main>    
     </body>

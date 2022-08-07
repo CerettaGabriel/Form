@@ -1,22 +1,105 @@
 body {
-    background-image: linear-gradient(90deg, lightblue, white)
+    font-family: Arial, Helvetica, sans-serif;
+    height: 557.6px;
+    background:
+    radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+    radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+    radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+    radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+    radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
 }
-.titulo {
-    border: 1px solid black;
-    font-weight: bolder;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 91px;
+    margin-bottom: 91px;
+    color: rgb(43, 43, 43);
 }
 .form_container {
-    margin-top: 25px;
-    width: auto;
-    border: 1px solid black;
+    height: auto;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 15px;
     background-color: white;
+    font-size: 14px;
 }
 legend {
-    border: 1px solid black;
-    background-color: lightblue;
-    padding: 2px;
+    font-size: 17px;
+    background-color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-weight: bolder;
+    border-radius: 15px;
+    text-align: center;
+}
+input {
+    width: 250px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 5px;
+}
+.checkbox {
+    width: 12px;
+}
+.nome {
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+.idade {
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+.email {
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+.foto {
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+.descr {
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+.sexo {
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+.termos {
+    margin-bottom: -10px;
+    margin-left: 10px;
+}
+.botao {
+    padding: 10px;
+}
+button {
+    font-size: 14px;
+    font-weight: bolder;
+    margin-left: 134.05px;
+    color: rgb(43, 43, 43);
+}
+button:hover {
+    color: white;
+    background:     radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+                    radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+                    radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+                    radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+                    radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+}
+textarea {
+    width: 250px;
+    height: 60px;
+    outline: 0;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    resize: none;
+}
+.none {
+    border-radius: 0px;
+    border: 0px;
+}
+a {
+    text-decoration: none;
+    color: rgb(43, 43, 43);
 }
